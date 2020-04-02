@@ -3,9 +3,7 @@
   "public": true,
   "cleanUrls": true,
   "github": {
-    "enabled": false,
-    "autoAlias": false,
-    "silent": false
+    "enabled": true
   },
   "name": "next-now",
   "alias": ["rjoydip-next-now"],
@@ -15,11 +13,10 @@
   },
   "functions": {},
   "builds": [
-    { "src": "/public/**", "use": "@now/static" },
+    { "src": "./public/**", "use": "@now/static" },
     { "src": "api/*.js", "use": "@now/node" }
   ],
   "routes": [
-    { "src": "/(.+js|.+css|.+png|.+ico|robots.txt)", "dest": "/public/$1" },
-    { "src": "^/precache-manifest.(.*)", "dest": "/precache-manifest.$1" }
+    { "src": "/(.*)", "dest": "public/$1" }
   ]
 }
