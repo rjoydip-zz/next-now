@@ -14,6 +14,7 @@ const Home = () => (
 
       <p className="description">
         A project setup using <code>next.js</code> and <code>now</code>
+        PR text
       </p>
 
       </main>
