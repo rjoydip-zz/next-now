@@ -14,7 +14,8 @@
   "functions": {},
   "builds": [
     { "src": "./public/**", "use": "@now/static" },
-    { "src": "api/*.js", "use": "@now/node" }
+    { "src": "api/*.js", "use": "@now/node" },
+    { "src": "package.json", "use": "@now/next" }
   ],
   "routes": [
     { "src": "/(.*)", "dest": "public/$1" }
