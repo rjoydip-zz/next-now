@@ -1,19 +1,11 @@
 {
   "version": 2,
   "public": true,
-  "cleanUrls": true,
   "github": {
     "enabled": true
   },
-  "name": "next-now",
   "alias": ["rjoydip-next-now"],
-  "env": {},
-  "build": {
-    "env": {}
-  },
-  "functions": {},
   "builds": [
-    { "src": "api/*.js", "use": "@now/node" },
     { "src": "package.json", "use": "@now/next" }
   ],
   "routes": [
